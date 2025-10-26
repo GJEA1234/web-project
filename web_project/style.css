@@ -1,0 +1,350 @@
+body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background-color: #DAEEF2 ;
+      color: green;
+      line-height: 1.6;
+      font-size: 18px;
+      min-height: 100vh;
+      scroll-behavior: smooth;
+    }
+
+
+/* nevigation */
+
+.navbar-main,
+    .navbar-secondary {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background: black;
+      box-shadow: 0 1px 4px rgb(0 0 0 / 0.1);
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+      
+    }
+
+    /* Main Nav is on top */
+    .navbar-main {
+      border-bottom: 1px solid;
+      padding-top: 5px;
+      padding-bottom: 0.5px;
+    }
+
+    /* Secondary Nav below Main Nav */
+    .navbar-secondary {
+      border-top: 1px solid ;
+      border-bottom: 1px solid ;
+      padding-top: 8px;
+      padding-bottom: 10px;
+    }
+
+    /* Nav Menu */
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 5px;
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    nav ul li a {
+      font-weight: 600;
+      font-size: 15px;
+      padding: 5px  5px;
+      color: #0BDA51;
+      white-space: nowrap;
+      
+    }
+
+    nav ul li a:hover,
+    nav ul li a:focus {
+      background-color: green;
+      color: white;
+       text-decoration: none;
+    }
+
+    /* Secondary nav menu smaller and accent */
+    .navbar-secondary nav ul li a {
+      font-weight: 500;
+      font-size: 15px;
+      color: #0BDA51;
+    }
+
+ .nav-inner {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;  /* home menu bar right*/
+      align-items: center;
+    }
+
+
+
+    .navbar-secondary nav ul li a:hover,
+    .navbar-secondary nav ul li a:focus {
+      background-color: red;
+      color: white;
+    }
+
+ 
+/*hero*/
+ 
+  .hero {  
+   background:url('hero.jpg') ;   
+  height: 450px;  
+ display: flex;  
+  justify-content: center;  
+  align-items: center;   
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+.hero .overlay-text {   background: rgba(0, 0, 0, 0.5);   
+                                  color: white;   
+                                  text-align: center;   
+                                  padding: 20px;  
+                                  padding-top: 1px;  
+                                 } 
+
+/* about */
+
+.img2 {
+  float: right;
+  margin-left: 60px; /*margin between imge and text*/
+}
+
+.img2 p {
+         font-family:Georgia, serif;
+         font-weight: 700;
+         font-size: 1.2;
+        
+          }
+
+.aboutcenter{
+         text-align: center;
+         margin-right: 30px;
+          }
+
+.clearfix {
+       margin-left: 90px;
+       margin-right: 90px;
+       margin-bottom: 10px;
+           }
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* strenth*/
+
+.strength-section {
+  text-align: center;
+  padding: 60px 0.5px;
+  background-color: #DAEEF2;
+}
+
+
+.strength-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.strength-box {
+  flex: 1 1 20px;
+  max-width: 220px;
+  background:  #DAEEF2;
+  padding: 10px 15px;
+  border-right: 1px solid #ccc;
+}
+
+.strength-box:last-child {
+  border-right: none;
+}
+
+.icon {
+  width: 50px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  color: #e30613;
+  font-size: 30px;
+}
+
+h3 {
+  margin: 0;
+}
+
+
+
+/*vision section*/
+
+  .vision {  
+          background:url('vision.jpg') center/cover no-repeat;   
+          height: 400px;  
+          display: flex;  
+          justify-content: center;  
+          align-items: center;   
+} 
+
+.vision .overlay-text2 {      
+                                  color: white;   
+                                  text-align: center;   
+                                  padding: 20px;  
+                                  padding-top: 1px;  
+                                 } 
+
+ /* Faculty Section */
+  
+ h1{
+          text-align: center;
+          font-size:35px;
+}   
+
+
+.row {
+  display: flex;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+  text-align: center;
+  
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+   high: 100%;
+}
+    
+    .column a:hover,
+    .column a:focus {
+      color: black;
+      text-decoration: underline;
+    }
+
+.faculty a {
+       color: green;
+       
+}
+
+.column a:hover,
+    .column a:focus img {
+  opacity: 0.5;
+}
+
+
+ /* Footer */
+    footer {
+      background-color: black;
+      color: white;
+      padding: 3 1 1;
+    }
+    .footer-container {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns:auto auto auto auto;
+      gap: 2;
+    }
+    .footer-section h3 {
+      font-family:Georgia, serif;
+      font-weight: 700;
+      font-size: 1.2;
+      margin-bottom: 0.8;
+    }
+    .footer-section ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .footer-section ul li a {
+      color: white;
+      font-weight: 400;
+      font-size: 15px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0.3 px;
+     
+    }
+
+
+    .footer-section ul li a:hover,
+    .footer-section ul li a:focus {
+      color: gray;
+      outline: none;
+      text-decoration: underline;
+    }
+    .footer-bottom {
+      text-align: center;
+      font-size: 15px;
+      margin-top:20px ;
+      color: #9ca3af;
+      border-top: 1px solid #555;
+      padding-top: 10px;
+      padding-bottom:10px;
+    }
+
+ .footer-icon ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+.fa {
+  padding: 5px;
+  font-size: 10px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+  border-radius: 50%;
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background:#3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+
+
+
